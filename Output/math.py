@@ -28,3 +28,4 @@ for x in range(2,mod+1):
             chain.append(chainx[f])
         print(chainx)
         chainx=[]
+        

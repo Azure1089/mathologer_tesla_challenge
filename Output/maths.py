@@ -2,8 +2,10 @@ import math
 def maths():
     data=[]
     file = open("./Source/tesla.data","r+")
-    mod = int(file.read(7)[-1:7])
-    mult = int(file.read(9)[-1:9])
+    x=file.readline()
+    y=file.readline()
+    mod = int(x[x.find(" ")+2:len(x)])
+    mult = int(x[x.find(" ")+2:len(x)])
     file.close()
     i=1
     chain=[1]

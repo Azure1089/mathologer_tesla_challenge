@@ -1,5 +1,4 @@
 import turtle
-from xml.sax import make_parser
 import maths
 import math
 file = open("./Source/tesla.data","r+")

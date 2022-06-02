@@ -1,4 +1,5 @@
 import turtle
+from xml.sax import make_parser
 import maths
 import math
 file = open("./Source/tesla.data","r+")
@@ -21,8 +22,8 @@ for i in range(mod):
     turtle.write(i)
     turtle.write(i)
     turtle.pensize(1)
-    for x in range(0,(360/mod)):
-        turtle.forward(6)
-        turtle.right(1)
+    for x in range(0,360):
+        turtle.forward(6/mod)
+        turtle.right(1/mod)
 print(maths.maths()[0])
 input()
